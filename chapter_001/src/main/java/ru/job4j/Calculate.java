@@ -7,13 +7,13 @@ package ru.job4j;
 
 public class Calculate {
 
- /**
- * Main Главный метод - с него всё начинается.
- * Выводим в консоль - "Hello world".
- *@param args - args.
- */
+    /**
+     * Main Главный метод - с него всё начинается.
+     * Выводим в консоль - "Hello world".
+     *@param args - args.
+     */
     public static void main(String[] args) {
- 	System.out.println("Hello World");
-   }
+        System.out.println("Hello World");
+    }
 }
 
