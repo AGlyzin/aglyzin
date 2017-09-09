@@ -4,8 +4,8 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-
 public class PaintTest {
+
     @Test
     public void whenBuildingPyramidIsTwo() {
         Paint paint = new Paint();
