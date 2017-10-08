@@ -4,7 +4,7 @@ package ru.job4j.dopzadanie;
  * class SortedArrayOne - checks sorted
  *
  * @author AGlyzin
- * @version 1
+ * @version 1.0
  * @since 08.10.2017
  */
 

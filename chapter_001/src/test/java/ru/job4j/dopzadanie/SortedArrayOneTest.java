@@ -9,7 +9,7 @@ import static org.hamcrest.core.Is.is;
  * Class SortedArrayOneTest - testing class SortedArrayOne
  *
  * @author AGlyzin
- * @version 1
+ * @version 1.0
  * @since 08.10.2017
  */
 
