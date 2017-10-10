@@ -28,4 +28,14 @@ public class WordInAnotherWordTest {
         boolean result = wordInAnotherWord.contains(origin, sub);
         assertThat(result, is(expected));
     }
+
+    @Test
+    public void whenWordInAnotherWord2() {
+        WordInAnotherWord wordInAnotherWord = new WordInAnotherWord();
+        String origin = "123";
+        String sub = "21";
+        boolean expected = true;
+        boolean result = wordInAnotherWord.contains(origin, sub);
+        assertThat(result, is(expected));
+    }
 }

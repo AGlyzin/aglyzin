@@ -13,10 +13,10 @@ public class SortedArrayTwo {
     /**
      * @param first  - array sorted ↑
      * @param second - array sorted ↑
-     * @return sorted or not/ true or false
+     * @return sorted three array
      */
 
-    public boolean checkSorted(int[] first, int[] second) {
+    public int[] isSortedArray(int[] first, int[] second) {
 
         int[] three = new int[first.length + second.length];
 
@@ -24,12 +24,18 @@ public class SortedArrayTwo {
 
         System.arraycopy(second, 0, three, first.length, second.length);
 
-        for (int i = 0; i < three.length - 1; i++) {
+        int l = three.length;
 
-            if (three[i] > three[i + 1]) return false;
-
+        for (int i = l - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (three[j] > three[j + 1]) {
+                    int tmp = three[j];
+                    three[j] = three[j + 1];
+                    three[j + 1] = tmp;
+                }
+            }
         }
 
-        return true;
+        return three;
     }
 }

@@ -22,10 +22,10 @@ public class SortedArrayTwoTest {
     @Test
     public void whenCheckTheSortingOfAnArray() {
         SortedArrayTwo sortedArrayTwo = new SortedArrayTwo();
-        int[] first = {1, 2, 3, 4};
-        int[] second = {6, 7, 8, 9, 10};
-        boolean expected = true;
-        boolean result = sortedArrayTwo.checkSorted(first, second);
+        int[] first = {1, 6, 8, 10};
+        int[] second = {4, 5, 7, 9, 13};
+        int[] expected = {1, 4, 5, 6, 7, 8, 9, 10, 13};
+        int[] result = sortedArrayTwo.isSortedArray(first, second);
         assertThat(result, is(expected));
 
     }
